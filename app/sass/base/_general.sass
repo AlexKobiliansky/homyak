@@ -24,6 +24,7 @@ body
   font-family: $default-font
   overflow-x: hidden
   color: $text
+  background: $accent-creamy
   input, textarea
     border: #666 1px solid
     outline: none
@@ -50,6 +51,7 @@ a:hover, a:active, a:focus
 a
   color: $accent-green
   text-decoration: none
+  +mt(.3s)
 
 a, li, button
   outline: none!important
@@ -62,5 +64,14 @@ ul
 .hidden
   display: none!important
 // ======= END TEMPLATE STYLES =======
+
+form
+  label
+    margin-bottom: 0
+    display: block
+  input
+    width: 100%
+    line-height: 1
+
 
 

@@ -6,14 +6,101 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .head-cart-title
+    display: none
+
+  .hamburger
+    display: block
+
+  .top-buttons
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  .main-mnu
+    display: none
+
+  .search-form
+    width: 300px
+
 // ≥992px
 +media-breakpoint-down(md)
+  .top-line
+    flex-wrap: wrap
+
+  .search-form
+    order: 4
+    width: 100%
+    margin-top: 10px
+    input
+      font-size: 14px
+      padding-top: 11px
+      padding-bottom: 9px
+      padding-left: 38px
+    label
+      &:before
+        width: 14px
+        height: 14px
+        top: calc(50% - 9px)
+        left: 14px
+
 
 // ≥768px
 +media-breakpoint-down(sm)
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .hamburger-box
+    width: 34px
+
+  .topline-address
+    margin-right: 10px
+
+  .top-line
+    line-height: 1.5
+
+
+
+  .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
+    height: 4px
+    width: 34px
+
+  .mnu-line
+    margin-bottom: 10px
+    .logo
+      img
+        max-width: 200px
+
+  .head-cart-img
+    width: 34px
+    height: 34px
+    line-height: 34px
+    img
+      width: 15px
+      height: auto
+    .num
+      right: -6px
+      top: -4px
+
+  .main-head
+    display: flex
+    flex-direction: column-reverse
+
+  .socials
+    display: none
+
+  .mobile-socials
+    display: block
+
+@media (max-width: 390px)
+  .hamburger
+    margin-left: 20px
+
+  .mnu-line
+    .logo
+      img
+        max-width: 180px
 
 
 /*==========  Mobile First  ==========*/

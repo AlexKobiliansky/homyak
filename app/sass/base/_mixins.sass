@@ -20,6 +20,12 @@
   background-repeat: no-repeat
   background-size: cover
 
+@mixin bg-grad()
+  background-image: linear-gradient(45deg, #5ecbc8 0, #94ecc4 100%)
+  &:hover
+    background-image: linear-gradient(45deg, #94ecc4 0, #5ecbc8 100%)
+
+
 @mixin overlay()
   content: ''
   position: absolute
@@ -27,4 +33,6 @@
   top: 0
   bottom: 0
   right: 0
+
+
 

@@ -1,0 +1,218 @@
+.top-line
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 13px 0
+
+.topline-address
+  font-size: 14px
+
+.topline-phone
+  display: inline-block
+  position: relative
+  padding-left: 18px
+  font-size: 16px
+  line-height: 1
+  font-weight: 700
+  color: $text
+  &:hover
+    color: $accent-green
+  &:before
+    content: ''
+    position: absolute
+    width: 11px
+    height: 11px
+    background-image: url('../img/icons/phone-icon.svg')
+    +bg-cover
+    left: 0
+    top: calc(50% - 7px)
+
+.search-form
+  width: 400px
+  label
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      width: 17px
+      height: 17px
+      background-image: url('../img/icons/search-icon.svg')
+      +bg-cover
+      left: 18px
+      top: calc(50% - 9px)
+  input
+    font-size: 15px
+    padding: 13px 22px 11px 46px
+    border: none
+    border-radius: 40px
+    &::placeholder
+      color: #a7a8b1
+
+.socials
+  font-size: 0
+
+
+.soc-item
+  display: inline-block
+  margin-left: 15px
+  .svg
+    height: 14px
+    width: auto
+    fill: #b4b0b0
+    +mt(.3s)
+  &:hover
+    .svg
+      fill: $accent-green
+  &:first-child
+    margin-left: 0
+    .svg
+      height: 15px
+
+
+.mnu-line
+  background-color: #fff
+  box-shadow: 0 0 20px 5px rgba(#000, .15)
+  padding: 12px 0
+  position: relative
+  .container
+    display: flex
+    justify-content: space-between
+    align-items: center
+  .logo
+    img
+      max-width: 275px
+  &:before, &:after
+    content: ''
+    position: absolute
+    width: 100%
+    height: 1px
+    background-color: $accent-creamy
+    left: 0
+  &:before
+    top: 4px
+  &:after
+    bottom: 4px
+
+.main-mnu
+  li
+    display: inline-block
+    font-size: 0
+    margin-right: 27px
+    &:last-child
+      margin-right: 0
+  a
+    display: inline-block
+    line-height: 1
+    font-size: 16px
+    position: relative
+    color: $text
+    &:after
+      content: ''
+      position: absolute
+      width: 0
+      height: 4px
+      background-color: $accent-green
+      left: 50%
+      bottom: -11px
+      +mt(.3s)
+    &:hover
+      color: $accent-green
+      &:after
+        width: 48px
+        left: calc(50% - 24px)
+
+.head-cart
+  display: flex
+  justify-content: space-between
+  align-items: center
+  &-img
+    position: relative
+    width: 47px
+    height: 47px
+    line-height: 47px
+    border-radius: 50%
+    text-align: center
+    +bg-grad
+    .num
+      position: absolute
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 18px
+      height: 18px
+      line-height: 1
+      font-size: 10px
+      color: #fff
+      background-color: #c71932
+      text-align: center
+      border-radius: 50%
+      padding-top: 2px
+      top: -2px
+      right: -5px
+  &-title
+    margin-left: 20px
+    font-weight: 700
+    text-transform: uppercase
+    color: $text
+  &:hover
+    .head-cart-img
+      background-image: linear-gradient(45deg, #94ecc4 0, #5ecbc8 100%)
+
+.hamburger
+  display: none
+  padding: 0
+  position: relative
+  top: 5px
+  margin-left: 30px
+
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
+  height: 5px
+  background-color: #422313!important
+
+
+//mmenu customization start
+.mm-menu_theme-dark
+  background-color: #ddd9d9
+  text-transform: uppercase
+
+.mm-logo
+  display: block
+  margin: 0 auto
+  transform: scaleY(.6)
+
+.mm-navbars_top
+  border-color: transparent
+
+.mm-listitem, .mm-listitem .mm-btn_next, .mm-listitem .mm-btn_next:before, .mm-listitem:after, .mm-listview
+  border-color: rgba(#422313, .3)
+
+.mm-listitem
+  a
+    padding-top: 14px
+    padding-bottom: 12px
+
+.mm-navbar
+  border: none
+
+
+.mm-menu_theme-dark .mm-navbar a, .mm-menu_theme-dark .mm-navbar>*
+  font-size: 20px
+  color: #422313
+  letter-spacing: 2px
+
+.mm-menu_theme-dark .mm-listview a:not(.mm-btn_next)
+  color: #422313
+//mmenu customization end
+
+.mobile-socials
+  margin-top: 30px
+  text-align: center
+  display: none
+  .soc-item
+    margin: 0 10px!important
+    .svg
+      height: 18px
+      fill: darken(#b4b0b0, 10%)
+    &:first-child
+      .svg
+        height: 20px
