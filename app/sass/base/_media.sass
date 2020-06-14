@@ -6,6 +6,23 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .intro-slider
+    width: calc(100% + ((100vw - 940px)/2))
+
+  .intro-slide
+    min-height: 400px
+    &-decor
+      font-size: 90px
+    h1
+      font-size: 36px
+      margin-bottom: 40px
+
+
+  .sidebar
+    &:before
+      width: calc((100vw - 940px)/2)
+      left: calc(0px - ((100vw - 940px)/2))
+
   .head-cart-title
     display: none
 
@@ -25,6 +42,17 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .intro-slider
+    width: calc(100% + (100vw - 700px))
+    left: calc(0px - ((100vw - 700px)/2))
+
+
+
+  .s-intro
+    .sidebar
+      display: none
+
   .top-line
     flex-wrap: wrap
 
@@ -47,9 +75,44 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+  .intro-slider
+    width: calc(100% + (100vw - 520px))
+    left: calc(0px - ((100vw - 520px)/2))
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .intro-slider
+    width: calc(100% + 30px)
+    left: -15px
+    .slick-arrow
+      width: 30px
+      height: 30px
+      right: 15px
+      &:after
+        background-size: 6px 10px
+    .slick-next
+      bottom: 50px
+    .slick-prev
+      bottom: 90px
+    .slick-dots
+      right: 29px
+      bottom: 140px
+
+
+  .intro-slide
+    padding-left: 40px
+    min-height: 300px
+    padding-bottom: 90px
+    &-decor
+      font-size: 60px
+      margin-bottom: -20px
+    h1
+      font-size: 24px
+      margin-bottom: 50px
+    .btn
+      font-size: 14px
+
 
   .hamburger-box
     width: 34px
@@ -60,7 +123,14 @@
   .top-line
     line-height: 1.5
 
+  .hamburger--elastic .hamburger-inner:before
+    top: 9px
 
+  .hamburger--elastic .hamburger-inner:after
+    top: 18px
+
+  .hamburger--elastic.is-active .hamburger-inner:after
+    transform: translate3d(0,-18px,0) rotate(-270deg)
 
   .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
     height: 4px
@@ -94,6 +164,26 @@
     display: block
 
 @media (max-width: 390px)
+
+  .intro-slider
+    .slick-next
+      bottom: 30px
+    .slick-prev
+      bottom: 70px
+    .slick-dots
+      bottom: 120px
+
+
+  .intro-slide
+    padding-bottom: 40px
+    &-decor
+      font-size: 50px
+      margin-bottom: -15px
+    .btn
+      font-size: 14px
+      padding: 12px 20px 11px
+
+
   .hamburger
     margin-left: 20px
 

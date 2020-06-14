@@ -77,6 +77,18 @@ $(document).ready(function(){
         }, 'xml');
     });
 
+    $('.intro-slider').slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        fade: true,
+        cssEase: 'linear',
+        arrows: true,
+        // dotsClass: "intro-dot"
+    });
+
     //E-mail Ajax Send
     $("form").submit(function() { //Change
         var th = $(this);
