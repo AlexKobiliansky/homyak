@@ -43,6 +43,9 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .brands-slider
+    padding: 0 80px
+
   .s-catalog
     padding-bottom: 30px
     .stock-previews-wrap
@@ -113,6 +116,28 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-brands
+    padding: 40px 0
+    .section-title
+      margin-bottom: 40px
+
+  .section-title
+    font-size: 24px
+
+  .owl-carousel
+    .owl-nav
+      button.owl-prev, button.owl-next
+        width: 30px
+        height: 30px
+        &:after
+          background-size: 6px 10px
+
+  .brands-slider
+    padding: 0 50px
+    margin-bottom: 0
+    .owl-nav
+      top: calc(50% - 15px)
 
   .catalog-item
     padding: 15px 20px

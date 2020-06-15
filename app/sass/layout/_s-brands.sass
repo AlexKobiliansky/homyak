@@ -1,0 +1,58 @@
+.s-brands
+  background-color: #fff
+  box-shadow:  0 0 15px 5px rgba(0,0,0,.1)
+  padding: 55px 0
+  position: relative
+  &:before, &:after
+    content: ''
+    position: absolute
+    width: 100%
+    height: 1px
+    background-color: $accent-creamy
+    left: 0
+  &:before
+    top: 4px
+  &:after
+    bottom: 4px
+  .section-title
+    margin-bottom: 65px
+
+.brands-slider
+  padding: 0 110px
+  margin-bottom: 65px
+  .owl-nav
+    position: absolute
+    left: 0
+    top: calc(50% - 20px)
+    width: 100%
+    button.owl-next, button.owl-prev
+      position: absolute
+      top: 0
+    button.owl-prev
+      left: 0
+    button.owl-next
+      right: 0
+  .owl-dots
+    position: absolute
+    left: 0
+    bottom: -65px
+    width: 100%
+    text-align: center
+    button.owl-dot
+      width: 26px
+      height: 2px
+      background-color: #ddd9d9
+      margin: 0 4px
+      &.active
+        background-color: $accent-green
+
+
+.brand-slide
+  display: flex
+  align-items: center
+  justify-content: center
+  img
+    max-width: 100%
+    //max-height: 100%
+    //object-fit: contain
+    width: auto!important

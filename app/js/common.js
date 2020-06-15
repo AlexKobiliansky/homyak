@@ -89,6 +89,42 @@ $(document).ready(function(){
         // dotsClass: "intro-dot"
     });
 
+    $('.brands-slider').owlCarousel({
+        loop:true,
+        nav: true,
+        // margin: 50,
+        // autoplay: true,
+        autoHeight: false,
+        navText: ['', ''],
+        responsive: {
+            0: {
+                dots: false,
+                items: 1,
+                margin: 25,
+                autoHeight: true,
+            },
+            390: {
+              items: 2,
+              margin: 25,
+              dots: false
+            },
+            768: {
+                items: 3,
+                slideBy: 3,
+                dots: true
+            },
+            992: {
+                items: 4,
+                slideBy: 4,
+                margin: 50
+            },
+            1200: {
+                items: 5,
+                slideBy: 5,
+            }
+        }
+    });
+
     //E-mail Ajax Send
     $("form").submit(function() { //Change
         var th = $(this);
