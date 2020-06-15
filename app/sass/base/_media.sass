@@ -3,14 +3,28 @@
 
 /*==========  Desktop First  ==========*/
 
+@media (max-width: 1600px)
+  .insta-item
+    height: 300px
+
 @media (max-width: 1500px)
   .reviews-decor-2
     right: 0
   .reviews-decor-1
     left: 5%
 
+@media (max-width: 1400px)
+  .insta-item
+    height: 250px
+
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .insta-wrap
+    grid-gap: 10px
+
+  .insta-item
+    height: 220px
 
   .s-reviews
     overflow: hidden
@@ -65,6 +79,15 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .insta-wrap
+    grid-template-columns: repeat(3, 1fr)
+
+  //.insta-item
+  //  &:nth-child(4)
+  //    grid-column: 1/3
+  //  &:nth-child(4)
+  //    grid-column: 2/4
 
   .s-about
     .row
@@ -193,6 +216,13 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .insta-wrap
+    grid-template-columns: repeat(2, 1fr)
+
+  .insta-item
+    &:last-child
+      grid-column: 1/3
 
   .s-about
     padding-top: 40px
@@ -397,6 +427,9 @@
     display: block
 
 @media (max-width: 390px)
+
+  .insta-item
+    height: 170px
 
   .about-desc, .about-link
     font-size: 14px
