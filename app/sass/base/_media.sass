@@ -3,8 +3,25 @@
 
 /*==========  Desktop First  ==========*/
 
+@media (max-width: 1500px)
+  .reviews-decor-2
+    right: 0
+  .reviews-decor-1
+    left: 5%
+
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .s-reviews
+    overflow: hidden
+
+  .reviews-decor-2
+    max-width: 500px
+    height: auto
+    right: -100px
+    bottom: 0
+  .reviews-slider
+    width: calc(100% - 200px)
 
   .s-populars
     padding-bottom: 70px
@@ -48,6 +65,9 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .reviews-slider
+    width: 100%
 
   .s-populars
     .product-item
@@ -108,6 +128,20 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .review-slide
+    padding: 30px 40px 40px
+    &-img
+      width: 120px
+      height: 120px
+    &-content
+      font-size: 18px
+      width: calc(100% - 160px)
+    &-title
+      margin-bottom: 12px
+
+  .reviews-decor-2
+    display: none
+
   .s-populars
     .product-item
       &-img
@@ -140,6 +174,28 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-reviews
+    padding: 40px 0
+
+  .reviews-slider
+    width: calc(100% - 30px)
+    .owl-nav
+      top: calc(50% - 15px)
+
+  .review-slide
+    flex-direction: column
+    &-img
+      width: 165px
+      height: 165px
+      margin-bottom: 20px
+    &-content
+      width: 100%
+    &-title
+      text-align: center
+
+  .reviews-decor-1
+    display: none
 
   .populars-wrap
     .row
@@ -299,6 +355,14 @@
     display: block
 
 @media (max-width: 390px)
+
+  .review-slide
+    padding-left: 20px
+    padding-right: 20px
+    &-title
+      margin-bottom: 8px
+    &-desc
+      font-size: 16px
 
   .product-item-wrapper
     width: 100%

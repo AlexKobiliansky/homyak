@@ -1,0 +1,57 @@
+.s-reviews
+  background-color: #d6d0d0
+  position: relative
+  padding: 60px 0 65px
+  .btn-wrap
+    text-align: center
+  .container
+    position: relative
+    z-index: 2
+
+.reviews-decor
+  position: absolute
+
+.reviews-decor-1
+  left: 14%
+  bottom: -60px
+
+.reviews-decor-2
+  right: 7%
+  bottom: -50px
+
+.reviews-slider
+  width: calc(100% - 400px)
+  margin: 0 auto 30px
+  .owl-nav
+    position: absolute
+    width: 100%
+    left: 0
+    top: calc(50% - 20px)
+    button.owl-prev
+      position: absolute
+      left: -16px
+    button.owl-next
+      position: absolute
+      right: -16px
+
+.review-slide
+  background-color: #fff
+  box-shadow: 0 0 10px 3px rgba(#000, .05)
+  padding: 42px 60px 55px
+  outline: 1px solid #ddd9d9
+  outline-offset: -7px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  &-img
+    width: 165px
+    height: 165px
+    border-radius: 50%
+    +bg-cover
+  &-content
+    width: calc(100% - 225px)
+    font-size: 20px
+  &-title
+    text-transform: uppercase
+    font-weight: 700
+    margin-bottom: 18px
