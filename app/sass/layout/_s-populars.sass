@@ -1,0 +1,85 @@
+.s-populars
+  padding: 55px 0 135px
+
+.product-item
+  background-color: #fff
+  box-shadow: 0 0 20px 3px rgba(#000, .1)
+  position: relative
+  border: 1px solid #d6dade
+  height: 100%
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  &-wrapper
+    margin-bottom: 20px
+  &-img
+    height: 285px
+    margin-bottom: 20px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &-title
+    line-height: 1.2
+    padding: 0 25px
+    font-weight: 700
+  &-desc
+    padding: 0 25px
+  &-top
+    padding-bottom: 20px
+  &-bottom
+    display: flex
+    border-top: 1px solid #d6dade
+    &>*
+      height: 75px
+  &-prices
+    display: flex
+    flex-direction: column
+    justify-content: center
+    width: 150px
+    border-right: 1px solid #d6dade
+    padding: 10px 20px
+    line-height: 1
+    .old
+      font-size: 14px
+      color: #8c9196
+      text-decoration: line-through
+      margin-bottom: 10px
+    .new
+      font-size: 24px
+      font-weight: 700
+  &-cart
+    width: calc(100% - 150px)
+    display: flex
+    justify-content: center
+    align-items: center
+    color: $text
+    font-size: 20px
+    font-weight: 700
+    padding: 5px
+    +mt(0s)
+    &:hover
+      background-image: linear-gradient(45deg, #5ecbc8 0, #94ecc4 100%)
+  &-labels
+    position: absolute
+    z-index: 2
+    top: 25px
+    left: 0
+    .label
+      line-height: 1
+      font-weight: 700
+      color: #fff
+      width: 70px
+      padding: 9px 0 8px
+      text-align: center
+      border-bottom-right-radius: 17px
+      border-top-right-radius: 17px
+      margin-bottom: 10px
+      &:last-child
+        margin-bottom: 0
+      &-sale
+        background-color: #797c81
+      &-new
+        text-transform: uppercase
+        background-image: linear-gradient(45deg, #5ecbc8 0, #94ecc4 100%)
+

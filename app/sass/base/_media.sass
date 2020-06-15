@@ -6,6 +6,12 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .s-populars
+    padding-bottom: 70px
+    .product-item-wrapper
+      &:last-child
+        display: none
+
   .intro-slider
     width: calc(100% + ((100vw - 940px)/2))
 
@@ -42,6 +48,14 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .s-populars
+    .product-item
+      &-wrapper
+        &:last-child
+          display: block
+      &-img
+        height: 330px
 
   .brands-slider
     padding: 0 80px
@@ -94,6 +108,16 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .s-populars
+    .product-item
+      &-img
+        height: 230px
+      &-prices
+        .new
+          font-size: 16px
+      &-cart
+        font-size: 16px
+
   .stock-previews-wrap
     flex-direction: column
     align-items: center
@@ -116,6 +140,54 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .populars-wrap
+    .row
+      justify-content: space-between
+  .s-populars
+    padding-bottom: 40px
+    .product-item
+      &-img
+        height: 200px
+        padding: 10px
+        margin-bottom: 10px
+      &-labels
+        top: 15px
+        .label
+          font-size: 12px
+          width: 50px
+          padding-top: 7px
+          padding-bottom: 6px
+      &-title
+        font-size: 14px
+        padding: 0 10px
+      &-desc
+        font-size: 14px
+        padding: 0 10px
+      &-top
+        padding-bottom: 10px
+      &-bottom
+        &>*
+          height: 60px
+      &-prices
+        padding: 5px 10px
+        width: 50%
+        .old
+          font-size: 12px
+        .new
+          font-size: 14px
+      &-cart
+        padding: 5px 10px
+        font-size: 14px
+        width: 50%
+
+  .product-item-wrapper
+    width: calc(50% - 5px)
+    margin-bottom: 10px
+    &:nth-child(odd)
+      padding-right: 0
+    &:nth-child(even)
+      padding-left: 0
 
   .s-brands
     padding: 40px 0
@@ -146,8 +218,8 @@
       font-size: 18px
 
   .intro-slider
-    width: calc(100% + 30px)
-    left: -15px
+    width: calc(100% + 20px)
+    left: -10px
     .slick-arrow
       width: 30px
       height: 30px
@@ -227,6 +299,33 @@
     display: block
 
 @media (max-width: 390px)
+
+  .product-item-wrapper
+    width: 100%
+    margin-bottom: 10px
+    &:nth-child(odd)
+      padding-right: 10px
+    &:nth-child(even)
+      padding-left: 10px
+
+  .s-populars
+    .product-item
+      &-img
+        height: 260px
+        padding: 20px
+      &-title
+        font-size: 16px
+      &-desc
+        font-size: 16px
+      &-prices
+        //padding: 5px 10px
+        .old
+          font-size: 14px
+        .new
+          font-size: 16px
+      &-cart
+        //padding: 5px 10px
+        font-size: 16px
 
   .catalog-wrap
     grid-gap: 10px
