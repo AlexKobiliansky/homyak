@@ -124,7 +124,8 @@ $(document).ready(function(){
             768: {
                 items: 3,
                 slideBy: 3,
-                dots: true
+                dots: true,
+                margin: 25
             },
             992: {
                 items: 4,
@@ -134,6 +135,7 @@ $(document).ready(function(){
             1200: {
                 items: 5,
                 slideBy: 5,
+                margin: 50
             }
         }
     });

@@ -283,3 +283,35 @@ form
   90%, 100%
     transform: perspective(140px) rotateY(180deg)
     opacity: 0
+
+
+.breadcrumbs
+  padding: 20px 0
+  a
+    display: inline-block
+    font-size: 12px
+    line-height: 1
+    text-transform: uppercase
+    position: relative
+    color: $text
+    margin-right: 30px
+    white-space: nowrap
+    &:hover
+      color: $accent-green
+    &:after
+      content: ''
+      position: absolute
+      width: 2px
+      height: 100%
+      background-color: #9a9a9a
+      top: 0
+      right: -17px
+    &:last-child
+      margin-right: 0
+      color: #9e9c9c
+      pointer-events: none
+      &:after
+        display: none
+
+p
+  margin-bottom: 10px
