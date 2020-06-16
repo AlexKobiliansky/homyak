@@ -20,6 +20,11 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .foot-item
+    padding-right: 30px
+    &-desc
+      font-size: 20px
+
   .insta-wrap
     grid-gap: 10px
 
@@ -79,6 +84,20 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .foot-items-wrap
+    flex-wrap: wrap
+
+  .foot-item
+    width: 50%
+    margin-bottom: 30px
+
+  .main-foot
+    padding-bottom: 10px
+
+  .foot-mnu
+    li
+      margin-right: 30px
 
   .insta-wrap
     grid-template-columns: repeat(3, 1fr)
@@ -162,6 +181,13 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .foot-mnu
+    ul
+      columns: 2 200px
+    li
+      display: block
+      margin-bottom: 12px
+
   .s-about
     .section-title
       margin-bottom: 75px
@@ -216,6 +242,26 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .foot-mnu
+    ul
+      columns: 2 150px
+    li
+      margin-right: 0
+      padding-right: 15px
+
+  .foot-item
+    padding-right: 0
+    width: 100%
+    text-align: center
+    &-img
+      margin-bottom: 8px
+    &-title
+      margin-bottom: 5px
+    img
+      margin-left: auto
+      margin-right: auto
+
 
   .insta-wrap
     grid-template-columns: repeat(2, 1fr)
@@ -427,6 +473,12 @@
     display: block
 
 @media (max-width: 390px)
+
+  .foot-mnu
+    a
+      font-size: 15px
+    ul
+      columns: 2 140px
 
   .insta-item
     height: 170px

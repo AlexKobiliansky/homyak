@@ -77,6 +77,19 @@ $(document).ready(function(){
         }, 'xml');
     });
 
+    function heightses() {
+        if ($(window).width()>480) {
+
+            $('.foot-item-title').height('auto').equalHeights();
+        }
+    }
+
+    $(window).resize(function() {
+        heightses();
+    });
+
+    heightses();
+
     $('.intro-slider').slick({
         dots: true,
         infinite: true,
@@ -135,6 +148,8 @@ $(document).ready(function(){
         items: 1,
         dots: false
     });
+
+    $('.preloader').fadeOut();
 
     //E-mail Ajax Send
     $("form").submit(function() { //Change
