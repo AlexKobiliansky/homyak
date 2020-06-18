@@ -85,7 +85,23 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .sidebar
+    padding: 30px 20px
+    margin-top: 40px
+    &:before
+      display: none
 
+  .products-catalog
+    margin-top: 20px
+
+  .s-with-filters
+    .side-mnu
+      display: none
+
+  .side-filters
+    padding-bottom: 0
+    &:after
+      display: none
 
   .foot-items-wrap
     flex-wrap: wrap
@@ -215,15 +231,15 @@
   .reviews-decor-2
     display: none
 
-  .s-populars
-    .product-item
-      &-img
-        height: 230px
-      &-prices
-        .new
-          font-size: 16px
-      &-cart
+
+  .product-item
+    &-img
+      height: 230px
+    &-prices
+      .new
         font-size: 16px
+    &-cart
+      font-size: 16px
 
   .stock-previews-wrap
     flex-direction: column
@@ -323,45 +339,46 @@
   .reviews-decor-1
     display: none
 
-  .populars-wrap
+  .populars-wrap, .products-catalog
     .row
       justify-content: space-between
   .s-populars
     padding-bottom: 40px
-    .product-item
-      &-img
-        height: 200px
-        padding: 10px
-        margin-bottom: 10px
-      &-labels
-        top: 15px
-        .label
-          font-size: 12px
-          width: 50px
-          padding-top: 7px
-          padding-bottom: 6px
-      &-title
+
+  .product-item
+    &-img
+      height: 200px
+      padding: 10px
+      margin-bottom: 10px
+    &-labels
+      top: 15px
+      .label
+        font-size: 12px
+        width: 50px
+        padding-top: 7px
+        padding-bottom: 6px
+    &-title
+      font-size: 14px
+      padding: 0 10px
+    &-desc
+      font-size: 14px
+      padding: 0 10px
+    &-top
+      padding-bottom: 10px
+    &-bottom
+      &>*
+        height: 60px
+    &-prices
+      padding: 5px 10px
+      width: 50%
+      .old
+        font-size: 12px
+      .new
         font-size: 14px
-        padding: 0 10px
-      &-desc
-        font-size: 14px
-        padding: 0 10px
-      &-top
-        padding-bottom: 10px
-      &-bottom
-        &>*
-          height: 60px
-      &-prices
-        padding: 5px 10px
-        width: 50%
-        .old
-          font-size: 12px
-        .new
-          font-size: 14px
-      &-cart
-        padding: 5px 10px
-        font-size: 14px
-        width: 50%
+    &-cart
+      padding: 5px 10px
+      font-size: 14px
+      width: 50%
 
   .product-item-wrapper
     width: calc(50% - 5px)
@@ -482,6 +499,12 @@
 
 @media (max-width: 390px)
 
+  .products-desc
+    font-size: 14px
+
+  .mm-logo
+    max-width: 240px
+
   .foot-mnu
     a
       font-size: 15px
@@ -510,24 +533,22 @@
     &:nth-child(even)
       padding-left: 10px
 
-  .s-populars
-    .product-item
-      &-img
-        height: 260px
-        padding: 20px
-      &-title
+
+  .product-item
+    &-img
+      height: 260px
+      padding: 20px
+    &-title
+      font-size: 16px
+    &-desc
+      font-size: 16px
+    &-prices
+      .old
+        font-size: 14px
+      .new
         font-size: 16px
-      &-desc
-        font-size: 16px
-      &-prices
-        //padding: 5px 10px
-        .old
-          font-size: 14px
-        .new
-          font-size: 16px
-      &-cart
-        //padding: 5px 10px
-        font-size: 16px
+    &-cart
+      font-size: 16px
 
   .catalog-wrap
     grid-gap: 10px

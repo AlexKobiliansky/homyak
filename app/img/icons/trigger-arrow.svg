@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (1.0+r73+1)"
+   sodipodi:docname="trigger-arrow.svg"
+   viewBox="0 0 28.795124 16"
+   height="16"
+   width="28.795124"
+   id="svg60"
+   version="1.1">
+  <g
+     transform="translate(42.885794)"
+     id="g68"
+     inkscape:label="Image"
+     inkscape:groupmode="layer">
+    <path
+       id="path72"
+       d="M -35.748562,9.7059661 C -42.78516,3.0581315 -42.87808,2.9616523 -42.885769,2.2953846 -42.893517,1.6239369 -41.090065,0 -40.336645,0 c 0.446041,0 2.620453,1.8434694 6.263046,5.3098208 l 5.579792,5.3098212 5.624076,-5.3098212 C -19.444583,2.0760589 -16.994601,0 -16.603547,0 c 0.752543,0 2.512877,1.6515164 2.512877,2.3575402 0,0.6640409 -0.534945,1.2161955 -7.609141,7.8539358 C -25.231944,13.525687 -28.129163,16 -28.477703,16 c -0.351894,0 -3.419777,-2.655719 -7.270859,-6.2940339 z"
+       style="fill:#65d0c8;fill-opacity:1;stroke-width:0.32" />
+  </g>
+</svg>

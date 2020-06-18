@@ -18,6 +18,10 @@
       color: $accent-green
       margin-bottom: 20px
       line-height: 1
+  .side-filters
+    h3
+      font-size: 18px
+      color: $text
 
 .side-mnu
   padding-top: 20px
@@ -38,3 +42,122 @@
     &.active
       color: $accent-green
       text-decoration: underline
+
+
+.noUi-connects
+  height: 5px
+  background-color: #dbd9d9
+
+.noUi-connect
+  background-color: $accent-green
+
+.side-filters
+  padding-bottom: 26px
+  padding-right: 5px
+  position: relative
+  &:after
+    content: ''
+    position: absolute
+    width: calc(100% + 15px)
+    height: 1px
+    background-color: #e9e8e8
+    left: 0
+    bottom: 0
+
+.filter-options-label
+  width: 100%
+  .jq-selectbox
+    li:hover
+      background-color: $accent-darkgreen
+    &__select
+      background: transparent
+      border: none!important
+      box-shadow: none
+      padding-left: 0
+      outline: none!important
+    &__select-text
+      font-family: $default-font
+    &__trigger
+      border: none
+      width: 20px
+    &__trigger-arrow
+      border: none
+      width: 9px
+      height: 5px
+      background-image: url('../img/icons/trigger-arrow.svg')
+      +bg-cover
+      right: 22px
+      top: 13px
+
+  .filter-options.opened
+    .jq-selectbox
+      &__trigger-arrow
+        transform: rotate(180deg)
+
+.filter-inputs
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+  margin-bottom: 30px
+  label
+    width: calc(50% - 4px)
+  input
+    width: 100%
+    line-height: 1
+    background-color: transparent
+    border: 1px solid #e9e8e8
+    padding: 9px 10px 6px
+    &::placeholder
+      color: $text
+
+.noUi-target
+  border: none
+  box-shadow: none
+  background: transparent
+
+.noUi-horizontal .noUi-handle
+  width: 0
+  height: 0
+  border: 10px solid transparent
+  border-bottom: 16px solid $accent-green
+  background: transparent
+  box-shadow: none
+  outline: none!important
+  cursor: pointer
+  &:before, &:after
+    display: none
+
+html:not([dir=rtl]) .noUi-horizontal .noUi-handle
+  right: -10px
+
+.noUi-pips-horizontal
+  top: -42px
+
+.noUi-value-large
+  font-size: 12px
+  color: $text
+
+.noUi-marker-horizontal.noUi-marker-large
+  height: 17px
+  width: 1px
+  position: absolute
+  top: 36px
+  background: #dbd9d9
+
+.range-wrap
+  padding-left: 17px
+  margin-bottom: 18px
+
+.filter-buttons
+  display: flex
+  align-items: center
+  .btn-grad
+    font-size: 14px
+    padding: 8px 20px 6px
+    margin-right: 18px
+  .reset-filter
+    color: $accent-green
+    font-size: 14px
+    &:hover
+      color: $text
+
