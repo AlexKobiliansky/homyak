@@ -117,6 +117,19 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .blog-item
+    &-img
+      width: 300px
+      height: 260px
+    &-content
+      width: calc(100% - 340px)
+      padding-top: 15px
+    &-desc
+      margin-bottom: 30px
+    &-link
+      font-size: 14px
+      padding: 14px 25px 12px
+
   .contacts-block
     position: relative
     left: 0
@@ -265,6 +278,16 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+
+  .blog-item
+    flex-direction: column
+    margin-bottom: 40px
+    &-img
+      width: 100%
+    &-content
+      width: 100%
+    &-desc
+      margin-bottom: 15px
 
   .s-news
     .stock-previews-wrap
@@ -628,6 +651,17 @@
     display: block
 
 @media (max-width: 390px)
+
+  .blog-item
+    margin-bottom: 30px
+    &-img
+      height: 220px
+    &-desc
+      font-size: 14px
+    &-link
+      font-size: 12px
+    &-date
+      font-size: 14px
 
   .contacts-block
     padding-left: 10px
