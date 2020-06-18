@@ -114,6 +114,13 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .s-news
+    padding-bottom: 40px
+
+  .news-item
+    &-img
+      height: 320px
+
   .s-about.p-about
     .about-img
       float: none
@@ -218,7 +225,7 @@
 
 
 
-  .s-intro, .s-delivery, .s-article, .s-catalog
+  .s-intro, .s-delivery, .s-article, .s-catalog, .s-news
     .sidebar
       display: none
 
@@ -244,6 +251,21 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+
+  .s-news
+    .stock-previews-wrap
+      padding-top: 20px
+
+  .news-item
+    flex-direction: column
+    margin-bottom: 30px
+    &-img
+      width: 100%
+      margin-bottom: 15px
+    &-content
+      width: 100%
+    &-desc
+      margin-bottom: 15px
 
   .s-about.p-about
     .page-about-wrap
@@ -319,6 +341,10 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .news-item
+    &-img
+      height: 240px
 
   .s-about.p-about
     padding-bottom: 40px
@@ -576,6 +602,13 @@
     display: block
 
 @media (max-width: 390px)
+
+  .news-item
+    &-desc
+      font-size: 14px
+      margin-bottom: 10px
+    &-img
+      height: 200px
 
   .brands-catalog, .categories-catalog
     grid-template-columns: repeat(2, 1fr)
