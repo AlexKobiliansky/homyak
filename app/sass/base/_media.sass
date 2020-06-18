@@ -20,10 +20,17 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .s-about.p-about
+    .about-img
+      width: 380px
+      margin-right: 30px
+      margin-bottom: 30px
+    .page-about-wrap
+      &:before
+
+
   .article-wrap
     display: block
-
-
 
   .article
     &-img
@@ -106,6 +113,16 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .s-about.p-about
+    .about-img
+      float: none
+      width: 100%
+    .page-about-wrap
+      padding-left: 0
+      &:before
+        font-size: 80px
+        top: -45px
 
   .s-article
     padding-bottom: 20px
@@ -228,6 +245,12 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .s-about.p-about
+    .page-about-wrap
+      &:before
+        font-size: 60px
+        top: -35px
+
   .brands-catalog
     grid-gap: 10px
     grid-template-columns: repeat(4, 1fr)
@@ -296,6 +319,12 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-about.p-about
+    padding-bottom: 40px
+    .page-about-wrap
+      &:before
+        display: none
 
   .article
     &-title
