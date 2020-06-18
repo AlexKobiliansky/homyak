@@ -20,6 +20,9 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .brands-catalog
+    grid-template-columns: repeat(5, 1fr)
+
   .foot-item
     padding-right: 30px
     &-desc
@@ -84,6 +87,9 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .brands-catalog
+    margin-top: 20px
 
   .sidebar
     padding: 30px 20px
@@ -199,6 +205,10 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .brands-catalog
+    grid-gap: 10px
+    grid-template-columns: repeat(4, 1fr)
+
   .brands-slider
     margin-bottom: 0
 
@@ -263,6 +273,10 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .brands-catalog
+    grid-template-columns: repeat(3, 1fr)
+    margin-top: 10px
 
   .s-delivery
     padding-bottom: 40px
@@ -499,7 +513,13 @@
 
 @media (max-width: 390px)
 
-  .products-desc
+  .brands-catalog
+    grid-template-columns: repeat(2, 1fr)
+
+  .brand-cat-item
+    height: 145px
+
+  .products-desc, .brands-cat-desc
     font-size: 14px
 
   .mm-logo
