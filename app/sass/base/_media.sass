@@ -20,6 +20,13 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .categories-catalog
+    grid-template-columns: repeat(4, 1fr)
+
+  .category
+    &-img
+      height: 140px
+
   .brands-catalog
     grid-template-columns: repeat(5, 1fr)
 
@@ -88,16 +95,13 @@
 // ≥992px
 +media-breakpoint-down(md)
 
-  .brands-catalog
-    margin-top: 20px
-
   .sidebar
     padding: 30px 20px
     margin-top: 40px
     &:before
       display: none
 
-  .products-catalog
+  .products-catalog, .brands-catalog, .categories-catalog
     margin-top: 20px
 
   .s-with-filters
@@ -273,6 +277,11 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .categories-catalog
+    grid-template-columns: repeat(3, 1fr)
+    margin-top: 10px
+    grid-gap: 10px
 
   .brands-catalog
     grid-template-columns: repeat(3, 1fr)
@@ -513,7 +522,7 @@
 
 @media (max-width: 390px)
 
-  .brands-catalog
+  .brands-catalog, .categories-catalog
     grid-template-columns: repeat(2, 1fr)
 
   .brand-cat-item
