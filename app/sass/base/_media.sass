@@ -20,6 +20,18 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .article-wrap
+    display: block
+
+
+
+  .article
+    &-img
+      width: 100%
+      margin-bottom: 20px
+    &-content
+      width: 100%
+
   .categories-catalog
     grid-template-columns: repeat(4, 1fr)
 
@@ -94,6 +106,13 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .s-article
+    padding-bottom: 20px
+
+  .article-wrap
+    margin-bottom: 40px
+
 
   .sidebar
     padding: 30px 20px
@@ -182,7 +201,7 @@
 
 
 
-  .s-intro, .s-delivery
+  .s-intro, .s-delivery, .s-article
     .sidebar
       display: none
 
@@ -277,6 +296,13 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .article
+    &-title
+      font-size: 24px
+      margin-bottom: 15px
+    &-img
+      height: 260px
 
   .categories-catalog
     grid-template-columns: repeat(3, 1fr)
