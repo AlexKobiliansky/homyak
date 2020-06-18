@@ -275,4 +275,72 @@ $(document).ready(function(){
         });
         return false;
     });
+
+    <!-- Javascript -->
+    function loadScript(url, callback){
+        var script = document.createElement("script");
+
+        if (script.readyState){  // IE
+            script.onreadystatechange = function(){
+                if (script.readyState == "loaded" ||
+                    script.readyState == "complete"){
+                    script.onreadystatechange = null;
+                    callback();
+                }
+            };
+        } else {  // Другие браузеры
+            script.onload = function(){
+                callback();
+            };
+        }
+
+        script.src = url;
+        document.getElementsByTagName("head")[0].appendChild(script);
+    }
+
+
+    function initMap() {
+        ymaps.ready(function(){
+            var mapId = $('#map'),
+                attitude = mapId.data("att"),
+                longtitude = mapId.data("long"),
+                zoom = mapId.data("zoom"),
+                marker = mapId.data("marker"),
+                map = new ymaps.Map("map", {
+                    center: [attitude, longtitude],
+                    controls: ['zoomControl'],
+                    zoom: zoom
+                }),
+
+                myPlacemark = new ymaps.Placemark(map.getCenter(), {}, {
+                    // Опции.
+                    // Необходимо указать данный тип макета.
+                    iconLayout: 'default#image',
+                    // Своё изображение иконки метки.
+                    iconImageHref: marker,
+                    // Размеры метки.
+                    iconImageSize: [26, 42],
+                });
+
+            map.geoObjects.add(myPlacemark);
+            var position = map.getGlobalPixelCenter();
+
+            if ($(window).width() >= 1200) {
+                map.setGlobalPixelCenter([ position[0] - 250, position[1]]);
+            }
+
+            if (($(window).width() >= 992) && ($(window).width() < 1200)) {
+                map.setGlobalPixelCenter([ position[0] - 200, position[1]]);
+            }
+        });
+    }
+
+    if( $('#map').length )         // use this if you are using id to check
+    {
+        setTimeout(function(){
+            loadScript("https://api-maps.yandex.ru/2.1/?apikey=e470b388-a1d0-4edf-acdc-34b4bc5bedee&lang=ru_RU&loadByRequire=1", function(){
+                initMap();
+            });
+        }, 2000);
+    }
 });

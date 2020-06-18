@@ -1,0 +1,75 @@
+.s-contacts
+  position: relative
+  z-index: 2
+
+#map
+  background-color: #eee
+  height: 528px
+
+.map-wrapper
+  position: relative
+
+.contacts-block
+  position: absolute
+  width: 380px
+  background-color: #fff
+  z-index: 3
+  left: calc((100vw - 1200px)/2)
+  top: 55px
+  outline: 1px solid #ddd9d9
+  outline-offset: -7px
+  padding: 45px 32px
+  line-height: 1
+  h2
+    font-size: 22px
+    font-weight: 700
+    text-transform: uppercase
+
+.contacts-block-item
+  padding: 30px 0
+  border-bottom: 1px solid #f1f1f1
+  &:last-child
+    border-bottom: none
+    padding-bottom: 0
+  &.address-item
+    font-size: 18px
+
+.contact-item
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-bottom: 25px
+  font-size: 18px
+  &:last-child
+    margin-bottom: 0
+  &-img
+    width: 15px
+  &-desc
+    width: calc(100% - 25px)
+  &.phone
+    font-weight: 700
+    font-size: 16px
+    a
+      color: $text
+      &:hover
+        color: $accent-green
+  &.mail
+    a
+      color: $text
+      text-decoration: underline
+      &:hover
+        text-decoration: none
+
+.contacts-socials
+  padding-left: 6px
+  font-size: 0
+  .soc-item
+    margin-right: 25px
+    margin-left: 0
+    .svg
+      height: 17px
+    &:first-child
+      .svg
+        height: 19px
+    &:last-child
+      margin-right: 0

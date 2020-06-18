@@ -20,6 +20,9 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .contacts-block
+    left: calc((100vw - 960px)/2)
+
   .s-about.p-about
     .about-img
       width: 380px
@@ -113,6 +116,17 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .contacts-block
+    position: relative
+    left: 0
+    top: 0
+    width: 100%
+    outline: none
+    background-color: $accent-creamy
+
+  .contacts-block-item
+    border-color: #ccc
 
   .s-news
     padding-bottom: 40px
@@ -341,6 +355,18 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-contacts
+    .section-title
+      margin-bottom: 10px
+
+  .contacts-block
+    h2
+      font-size: 18px
+      margin-bottom: 0
+
+  #map
+    height: 400px
 
   .news-item
     &-img
@@ -602,6 +628,13 @@
     display: block
 
 @media (max-width: 390px)
+
+  .contacts-block
+    padding-left: 10px
+    padding-right: 10px
+
+  #map
+    height: 340px
 
   .news-item
     &-desc
