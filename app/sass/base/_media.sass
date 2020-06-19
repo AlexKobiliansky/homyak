@@ -20,6 +20,23 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .order-total
+    padding: 30px
+
+  .coupon-form
+    width: 380px
+    margin-right: 50px
+    label
+      width: 250px
+    .btn
+      width: calc(100% - 250px)
+
+  .cart-item
+    &-title
+      font-size: 14px
+      line-height: 1.2
+      padding: 10px 15px
+
   .contacts-block
     left: calc((100vw - 960px)/2)
 
@@ -116,6 +133,48 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .order-total
+    flex-wrap: wrap
+
+  .coupon-form
+    width: 100%
+    margin-bottom: 30px
+    margin-right: 0
+    label
+      width: 70%
+    .btn
+      width: 30%
+
+  .cart-item
+    padding-right: 15px
+    &-title
+      width: calc(100% - 490px)
+    &-img
+      width: 80px
+      height: 80px
+    &-price
+      font-size: 16px
+      width: 110px
+      .price
+        font-size: 16px
+      .notice
+        font-size: 12px
+    &-del
+      width: 20px
+      .svg
+        height: 20px
+
+  .amount-wrap
+    width: 140px
+    margin-right: 30px
+    input
+      font-size: 14px
+      width: 70px
+      padding-left: 5px
+      padding-right: 5px
+
+
 
   .blog-item
     &-img
@@ -279,6 +338,24 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .cart-item
+    flex-wrap: wrap
+    position: relative
+    justify-content: center
+    padding: 20px
+    &-img
+      width: 140px
+      height: 140px
+      margin-bottom: 20px
+    &-title
+      width: calc(100% - 140px)
+      padding-left: 30px
+      margin-bottom: 20px
+    &-del
+      position: absolute
+      right: 10px
+      top: 10px
+
   .blog-item
     flex-direction: column
     margin-bottom: 40px
@@ -378,6 +455,61 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-cart
+    padding-bottom: 60px
+    .btn-wrap
+      .btn
+        width: 100%
+        font-size: 18px
+
+  .order-total
+    margin-bottom: 20px
+    &-nds
+      width: 50%
+      font-size: 18px
+      .notice
+        margin-top: 3px
+    &-sum
+      width: 50%
+      font-size: 22px
+
+  .coupon-form
+    .btn
+      width: 120px
+    label
+      width: calc(100% - 120px)
+
+  .cart-item
+    &-img
+      width: 80px
+      height: 80px
+    &-title
+      width: calc(100% - 80px)
+      padding-left: 20px
+    &-price
+      width: 50%
+      margin-bottom: 20px
+      font-size: 18px
+      .price
+        font-size: 18px
+      &.total-price
+        text-align: right
+        width: 100%
+        font-size: 22px
+        margin-bottom: 0
+        .price
+          font-size: 22px
+
+  .amount-wrap
+    width: 50%
+    margin-right: 0
+    margin-bottom: 20px
+    input
+      font-size: 16px
+      padding: 8px 7px 6px
+  .spinner-amount
+    justify-content: flex-end
 
   .s-contacts
     .section-title
@@ -624,10 +756,13 @@
     width: 34px
 
   .mnu-line
-    margin-bottom: 10px
+    margin-bottom: 0
     .logo
       img
         max-width: 200px
+
+  .topline-address, .topline-phone
+    line-height: 1.5
 
   .head-cart-img
     width: 34px
@@ -651,6 +786,23 @@
     display: block
 
 @media (max-width: 390px)
+
+  .coupon-form
+    flex-wrap: wrap
+    label
+      width: 100%
+    .btn
+      width: 100%
+      padding: 12px 10px 10px
+
+  .order-total
+    &-nds
+      width: 100%
+      margin-bottom: 20px
+      text-align: center
+    &-sum
+      width: 100%
+      text-align: center
 
   .blog-item
     margin-bottom: 30px

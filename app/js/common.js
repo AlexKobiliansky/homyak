@@ -262,6 +262,27 @@ $(document).ready(function(){
 
     $('.preloader').fadeOut();
 
+    $('.spinner-amount').on('click', 'button', function(e){
+        var parent = $(this).parents('.spinner-amount');
+        var input = parent.find('.amount');
+        var amount = input.val();
+        var btn = parent.siblings('.btn');
+
+        var product = $(this).parents('.product-wrap');
+        var cartBtn = product.find('.add_to_cart_button');
+
+
+        if (!$(this).is('.down')) {
+            amount++
+        } else {
+            if (amount > 1) amount--
+        }
+
+        input.val(amount).attr('value', amount);
+
+        cartBtn.attr("data-quantity", amount);
+    });
+
     //E-mail Ajax Send
     $("form").submit(function() { //Change
         var th = $(this);

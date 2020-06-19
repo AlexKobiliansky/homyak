@@ -1,0 +1,147 @@
+.s-cart
+  padding-bottom: 105px
+  .btn-wrap
+    text-align: right
+    .btn
+      font-size: 20px
+      font-weight: 700
+      padding: 22px 22px 20px
+      width: 300px
+      text-transform: uppercase
+
+.cart
+  margin-bottom: 22px
+
+.cart-item
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 11px 27px 11px 11px
+  border: 1px solid #e0dbdb
+  border-bottom: none
+  &:last-child
+    border-bottom: 1px solid #e0dbdb
+  &-del
+    display: inline-block
+    width: 22px
+    text-align: right
+    .svg
+      height: 26px
+      width: auto
+      fill: #b4b0b0
+      +mt(.15s)
+    &:hover
+      .svg
+        fill: red
+  &-img
+    background-color: #fff
+    width: 140px
+    height: 140px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &-price
+    width: 140px
+    line-height: 1
+    font-weight: 700
+    .price
+      font-size: 20px
+    .notice
+      font-size: 14px
+      color: #a5a0a0
+      display: block
+      font-weight: normal
+      margin-top: 5px
+  &-title
+    color: $text
+    padding: 10px 45px
+    width: calc(100% - 640px)
+    &:hover
+      color: $accent-green
+
+.amount-wrap
+  font-size: 0
+  width: 158px
+  margin-right: 40px
+  input
+    width: 90px
+    line-height: 1
+    border: 1px solid #e0dbdb
+    background-color: #fff
+    text-align: center
+    padding: 11px 13px 10px
+    font-size: 16px
+  button
+    width: 29px
+    height: 29px
+    position: relative
+    cursor: pointer
+    border: none
+    background-color: transparent
+    &:before, &:after
+      content: ''
+      position: absolute
+      background-color: $text
+    &:before
+      width: calc(100% - 10px)
+      height: 3px
+      left: 5px
+      top: calc(50% - 1.5px)
+    &.down
+      margin-right: 5px
+    &.up
+      margin-left: 5px
+      &:after
+        height: calc(100% - 10px)
+        width: 3px
+        top: 5px
+        left: calc(50% - 1.5px)
+
+.spinner-amount
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.order-total
+  background-color: #fff
+  line-height: 1
+  padding: 33px 80px 33px 55px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin-bottom: 33px
+  &-nds
+    font-size: 24px
+    font-weight: 700
+    width: 140px
+    .notice
+      font-size: 14px
+      display: block
+      color: #b4b0b0
+      font-weight: normal
+      margin-top: 10px
+  &-sum
+    font-size: 24px
+    font-weight: 700
+    display: inline-block
+    width: 160px
+    text-align: right
+
+
+
+
+.coupon-form
+  width: 472px
+  display: flex
+  margin-right: 150px
+  label
+    width: 316px
+  input
+    padding: 13px 20px 11px
+    border: 1px solid #e0dbdb
+  .btn
+    width: calc(100% - 316px)
+
+
+
