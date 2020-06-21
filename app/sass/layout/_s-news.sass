@@ -12,10 +12,24 @@
     width: 280px
     height: 210px
     background-color: #ccc
+    position: relative
     img
       width: 100%
       height: 100%
       object-fit: cover
+    &:before
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      left: 0
+      top: 0
+      background-color: rgba($accent-green, .2)
+      opacity: 0
+      +mt(.3s)
+    &:hover
+      &:before
+        opacity: 1
   &-content
     width: calc(100% - 315px)
     display: flex
@@ -28,6 +42,10 @@
     font-weight: 700
     text-transform: uppercase
     margin-bottom: 8px
+    display: block
+    color: $text
+    &:hover
+      color: $accent-darkgreen
   &-desc
     margin-bottom: 25px
   &-link

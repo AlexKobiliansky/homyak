@@ -20,6 +20,16 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .s-product
+    padding-bottom: 70px
+
+  .product
+    &-img
+      width: 400px
+      height: 400px
+    &-content
+      width: calc(100% - 480px)
+
   .order-total
     padding: 30px
 
@@ -133,6 +143,13 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .product
+    &-img
+      width: 350px
+      height: 350px
+    &-content
+      width: calc(100% - 410px)
 
   .order-total
     flex-wrap: wrap
@@ -338,6 +355,26 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .s-product
+    .breadcrumbs
+      padding-bottom: 40px
+
+  .product
+    &-wrap
+      flex-direction: column
+    &-img
+      width: 100%
+      margin-bottom: 20px
+      &:before
+        display: none
+    &-content
+      width: 100%
+    &-price
+      text-align: left
+      width: auto
+      line-height: 1
+      margin-top: 3px
+
   .cart-item
     flex-wrap: wrap
     position: relative
@@ -455,6 +492,18 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-product
+    padding-bottom: 40px
+    .breadcrumbs
+      padding-bottom: 20px
+
+  .product
+    &-title
+      font-size: 24px
+      margin-bottom: 25px
+    &-img
+      height: 280px
 
   .s-cart
     padding-bottom: 60px
@@ -786,6 +835,19 @@
     display: block
 
 @media (max-width: 390px)
+
+  .product
+    &-img
+      height: 220px
+    &-price
+      font-size: 20px
+      span
+        font-size: 24px
+    &-bottom
+      .btn
+        font-size: 14px
+        padding: 13px 25px 11px
+
 
   .coupon-form
     flex-wrap: wrap
